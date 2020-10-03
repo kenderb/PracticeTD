@@ -26,8 +26,14 @@ input {
     font-family: custom-font, sans-serif;
 }
 
+header, 
+button, 
+input {
+    font-size: 1.3rem;
+}
+
 header {
-    min-width: 960px;
+    min-width: 1258px;
     background-color: var(--gray-one);
     color: white;
 }
@@ -37,8 +43,8 @@ li {
 }
 
 input {
-    padding: 0.5rem 2.5rem;
-    border-radius: 0.4rem;
+    padding: 1rem 4rem 1rem 3rem;
+    border-radius: 0.7rem;
     border: none;
 }
 
@@ -59,7 +65,7 @@ form {
 
 .nav-bar img {
     margin-top: 1rem;
-    min-width: 10rem;
+    min-width: 12rem;
 }
 
 .nav-bar ul {
@@ -67,7 +73,7 @@ form {
 }
 
 .nav-bar ul * + *{
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .nav-bar button {
@@ -85,8 +91,8 @@ form {
 }
 
 .search {
-    font-size: 1.2rem;
+    font-size: 2rem;
     position: absolute;
-    top: 0.5rem;
-    left: 0.4rem;
+    top: 0.8rem;
+    left: 0.6rem;
 }
