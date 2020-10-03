@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  --gray-one: #818181;
+  --gray-two: #494949;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: custom-font;
+  src: url('../assets/fonts/OPTIFormula-One.otf');
+}
+
+body, 
+button, 
+input {
+    font-family: custom-font, sans-serif;
+}
+
+header {
+    min-width: 960px;
+    background-color: var(--gray-one);
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    position: relative;
+}
+
+.nav-bar {
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar img {
+    margin-top: 1rem;
+    min-width: 10rem;
+}
+
+.nav-bar ul {
+    align-items: center;
+}
+
+.nav-bar ul * + *{
+    margin-left: 1rem;
+}
+
+.nav-bar button {
+    font-weight: bold;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: var(--gray-two) ;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.4rem;
+}
