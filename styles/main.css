@@ -33,9 +33,9 @@ input {
 }
 
 header {
-    min-width: 1258px;
     background-color: var(--gray-one);
     color: white;
+    min-width: 1180px;
 }
 
 li {
@@ -43,9 +43,11 @@ li {
 }
 
 input {
-    padding: 1rem 4rem 1rem 3rem;
+    padding: 1rem 0.1rem 1rem 3rem;
+    width: 100%;
     border-radius: 0.7rem;
     border: none;
+    box-sizing: border-box;
 }
 
 a {
@@ -55,6 +57,7 @@ a {
 
 form {
     position: relative;
+    width: 22%;
 }
 
 .nav-bar {
@@ -65,7 +68,7 @@ form {
 
 .nav-bar img {
     margin-top: 1rem;
-    min-width: 12rem;
+    min-width: 15rem;
 }
 
 .nav-bar ul {
