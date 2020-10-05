@@ -8,6 +8,7 @@
   --gray-one: #818181;
   --gray-two: #616161;
   --gray-dark: #414141;
+  --gray-darker: #1f1f1f;
   --gray-three: #474747;
   --gray-forth: #cfcfcf;
 }
@@ -41,10 +42,6 @@ header {
     min-width: 1180px;
 }
 
-li {
-    list-style: none;
-}
-
 input {
     padding: 1rem 0.1rem 1rem 3rem;
     width: 100%;
@@ -75,6 +72,7 @@ form {
 }
 
 .nav-bar ul {
+    list-style-type: none;
     align-items: center;
 }
 
@@ -105,7 +103,6 @@ form {
 
 .display-grid {
     color: white;
-    background-color: red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 45rem);
@@ -132,10 +129,12 @@ form {
 }
 
 .header-text span{
+    line-height: 3.5rem;
     font-weight: lighter;
     padding: 0.5rem 0.8rem;
     background-color: white;
     box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 
@@ -194,6 +193,42 @@ form {
     margin-top: auto;
     margin-bottom: 3rem;
     font-size: 3rem;
+}
+
+.smashing-member {
+    color: var(--gray-forth);
+    background-color: var(--gray-darker);
+}
+
+.smashing-member ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.text-sub {
+    width: 50%;
+    padding: 3rem 7rem;
+}
+
+.text-sub  * + * {
+    margin-top: 0.5rem;
+}
+
+.text-sub p {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.smashing-member button {
+    margin-top: 2rem;
+    color: white;
+    border-radius: 0.8rem;
+    background-image: linear-gradient(var(--gray-one), var(--gray-two));
+    padding: 1rem 1.3rem;
+}
+
+.photo-sub {
+
 }
 
 .grid-two {
